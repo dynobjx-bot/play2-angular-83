@@ -1,0 +1,14 @@
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead>
+            <th>Product Title</th>
+            <th>SKU</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="p in products">
+                <td ng-bind="p.title"></td>
+                <td ng-bind="p.sku"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
