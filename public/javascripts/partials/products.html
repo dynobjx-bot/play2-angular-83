@@ -5,7 +5,7 @@
             <th>SKU</th>
         </thead>
         <tbody>
-            <tr ng-repeat="p in products">
+            <tr ng-repeat="p in products | orderBy:'title'">
                 <td ng-bind="p.title"></td>
                 <td ng-bind="p.sku"></td>
             </tr>
